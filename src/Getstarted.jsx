@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import "./netflix.css";
 import Logo from "./images/getstarted.png";
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Getstarted = () => {
+  const navigate=useNavigate();
     const [email, setEmail]=useState('')
     const[passwd ,setPasswd]=useState('')
     const [confirmpass,setConfirm]=useState('');
@@ -17,7 +19,8 @@ const Getstarted = () => {
         } else {
            localStorage.setItem('Email',email)
            localStorage.setItem('Password',passwd)
-           window.location.href = "/Signin";
+           /* window.location.href = "/Signin"; */
+           navigate("/Signin")
         }
         
     }
