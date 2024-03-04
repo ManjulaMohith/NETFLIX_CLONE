@@ -19,8 +19,8 @@ const Getstarted = () => {
         } else {
            localStorage.setItem('Email',email)
            localStorage.setItem('Password',passwd)
-           /* window.location.href = "/Signin"; */
            navigate("/Signin")
+           alert("successfully signup go to signin page")
         }
         
     }
