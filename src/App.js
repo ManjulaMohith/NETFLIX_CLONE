@@ -15,7 +15,7 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter basename= "/NETFLIX_CLONE">
+      <BrowserRouter>
       <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/Signin" element={<Signin/>} />
