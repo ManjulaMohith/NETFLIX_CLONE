@@ -66,7 +66,7 @@ const Overview = () => {
   return (
     <>
       <div className='overview'>
-        <img src={`https://image.tmdb.org/t/p/w500${Poster}`} alt="description" height={310} width={290} className='img_s' />
+        <div><img src={`https://image.tmdb.org/t/p/w500${Poster}`} alt="description" height={310} width={290} className='img_s' /></div>
         <div>
           <h3>{name}</h3>
           <div style={{display:"flex"}}>

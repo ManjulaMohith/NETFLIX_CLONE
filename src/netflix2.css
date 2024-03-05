@@ -57,7 +57,7 @@
 /* Overview css styling */
 .overview{
     background-color: black;
-    padding: 10% 20% 10% 20%;
+    padding: 10%;
     width: 100vw;
   height: fit-content;
     color: white;
@@ -67,12 +67,14 @@
     font-family: sans-serif;
     
 }
+
 .overview Button:hover{
     color: red;
 }
 .img_s{
     border-radius: 10px;
     margin-right: 15px;
+    max-width: 290px;
 }
 .overview p{
     margin-bottom: 5px;
@@ -82,6 +84,25 @@
     color: azure;
     
    padding: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+    .overview {
+        padding: 10% 15%; /* Decrease padding on smaller screens */
+    }
+    .img_s{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .overview {
+        padding: 10% 20%; /* Adjust padding for larger screens */
+    }
+
+    .img_s {
+        max-width: 310px; /* Adjusted maximum width for larger screens */
+    }
 }
 /* watchlist page */
 .card1{
