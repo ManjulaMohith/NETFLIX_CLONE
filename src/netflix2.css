@@ -86,12 +86,12 @@
    padding: 5px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 768px) {
     .overview {
         padding: 10% 15%; /* Decrease padding on smaller screens */
     }
     .img_s{
-        display: block;
+        display: none;
     }
 }
 
@@ -100,9 +100,6 @@
         padding: 10% 20%; /* Adjust padding for larger screens */
     }
 
-    .img_s {
-        max-width: 310px; /* Adjusted maximum width for larger screens */
-    }
 }
 /* watchlist page */
 .card1{
