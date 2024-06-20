@@ -60,7 +60,7 @@ const Home = () => {
     
     <div className='questions'>
     <h2>frequently asked questions</h2>
-    {/* first question */}
+     {/* first question  */}
       <div className='ques' onClick={()=>togglequestion(0)}>
         <div><h3>What is Netflix?</h3></div>
         <div className='plus'>{showDescription[0]?"×":"+"}</div>

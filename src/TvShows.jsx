@@ -47,7 +47,7 @@ const TvShows = () => {
     <label htmlFor='category' style={{marginTop:"25px",padding:"10px"}}>
         <select id='category' defaultValue='all' style={{backgroundColor:"#0047AB",color:"white",fontWeight:"bold"}}
          onChange={handleGenreChange}>
-            <option value="35,80,16,10759,18">all</option>
+            <option value="35,80,16,10759,10751,10762,10764,10768,10766,18">all</option>
             <option value="35">Comedy</option>
             <option value="80">Crime</option>
             <option value="16">Animation</option>
